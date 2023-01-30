@@ -1,0 +1,13 @@
+apiVersion: aws.sushrut.com/v1
+kind: SushrutAWSManager
+metadata:
+  labels:
+    app.kubernetes.io/name: sushrutawsmanager
+    app.kubernetes.io/instance: sushrutawsmanager-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: sushrutawsmanager-sample
+spec:
+  # TODO(user): Add fields here
+  image: "quay.io/talat_shaheen0/aws-vmstate:latest"

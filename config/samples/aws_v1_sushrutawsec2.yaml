@@ -1,0 +1,13 @@
+apiVersion: aws.sushrut.com/v1
+kind: SushrutAWSEC2
+metadata:
+  labels:
+    app.kubernetes.io/name: sushrutawsec2
+    app.kubernetes.io/instance: sushrutawsec2-sample
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator
+  name: sushrutawsec2-sample
+spec:
+  # TODO(user): Add fields here
+  image: "quay.io/talat_shaheen0/aws-vmcreate:latest"
